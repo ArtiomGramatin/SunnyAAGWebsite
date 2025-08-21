@@ -345,7 +345,7 @@ main {
 .download-btn {
   display: inline-block;
   background: linear-gradient(135deg, #4e9af1, #1f78ff);
-  color: #fff;
+  color: #ffff;
   font-size: 1.2rem;
   font-weight: 600;
   padding: 12px 24px;
