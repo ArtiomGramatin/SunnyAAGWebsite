@@ -94,7 +94,6 @@ main {
   color: var(--text);
 }
 
-/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
@@ -196,7 +195,6 @@ main {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Responsive layout */
 @media (max-width: 768px) {
   .app-block {
     flex-direction: column;
@@ -327,7 +325,6 @@ main {
   color: var(--text-secondary);
 }
 
-/* Desktop layout for features */
 @media (min-width: 768px) {
   .feature {
     flex-direction: row;
@@ -344,4 +341,69 @@ main {
   .feature img {
     flex: 1;
   }
+}
+.download-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #4e9af1, #1f78ff);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 1.5rem 0;
+}
+
+.download-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(30, 100, 255, 0.4);
+}
+
+.bottom-info {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #ffffff10;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.notice {
+  font-size: 0.95rem;
+  color: #ffcc66;
+  margin-bottom: 1rem;
+}
+
+.github-link a {
+  color: #4e9af1;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.github-link a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background: #4e9af1;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.github-link a:hover {
+  color: #1f78ff;
+}
+
+.github-link a:hover::after {
+  transform: scaleX(1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
 }
