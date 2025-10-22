@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PingBar - Product Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar slide-down">
+  <div class="logo">PingBar</div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="apps.html" class="active">Apps</a>
+  </nav>
+  <button class="theme-toggle" id="themeToggle">🌙</button>
+</header>
+
+<main class="product-page">
+
+  <div class="app-logo">
+    <img src="images/pingbar/icon.png" alt="App Logo" />
+  </div>
+
+  <h1 class="app-title">PingBar</h1>
+  <p class="app-tagline">
+    Lightweight macOS menu bar app for sending quick pings with short messages. Designed for fast delivery, silent notifications, and minimal interaction.
+  </p>
+
+  <a href="app/PingBar.dmg" class="download-btn">Download for macOS</a>
+
+  <section class="feature">
+    <img src="images/pingbar/icon-menubar.png" alt="PingBar Menu Bar Icon" />
+    <div class="feature-text">
+      <h2>Menu Bar Integration</h2>
+      <p>PingBar runs in your macOS menu bar, always ready to send or receive a ping without opening any window.</p>
+    </div>
+  </section>
+
+  <section class="feature">
+    <img src="images/pingbar/Screenshot-Login.png" alt="Login and Signup Screen" />
+    <div class="feature-text">
+      <h2>Simple Sign In</h2>
+      <p>Secure login and signup with a clean interface. No unnecessary options — just connect and use.</p>
+    </div>
+  </section>
+
+  <section class="feature">
+    <img src="images/pingbar/Screenshot-Connect.png" alt="Connect to Friend View" />
+    <div class="feature-text">
+      <h2>Quick Connection</h2>
+      <p>Use an invite code to connect with a friend instantly. Once connected, you can send short pings anytime.</p>
+    </div>
+  </section>
+
+  <section class="feature">
+    <img src="images/pingbar/Screenshot-Message.png" alt="Send Message View" />
+    <div class="feature-text">
+      <h2>Send a Ping</h2>
+      <p>Type a short message and send it as a ping. The recipient receives it as a fast macOS notification.</p>
+    </div>
+  </section>
+
+  <section class="feature">
+    <video autoplay muted loop playsinline>
+      <source src="images/pingbar/notification.mov" type="video/mp4">
+    </video>
+    <div class="feature-text">
+      <h2>Fast Notification Delivery</h2>
+      <p>Each ping is delivered as a native macOS notification — fast and reliable. No chat windows or message history.</p>
+    </div>
+  </section>
+
+  <div class="bottom-info">
+    <p class="notice">
+  ⚠️ PingBar uses Supabase for authentication and message delivery. Requires an internet connection for sending and receiving pings.  
+  If notifications are not appearing, verify that PingBar has notification permissions enabled in macOS System Settings.
+</p>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 Artiom Gramatin • <a href="mailto:artiomgramatinlol@gmail.com">Contact Me</a></p>
+	<p id="last-updated" class="last-updated"></p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

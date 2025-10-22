@@ -20,3 +20,18 @@ toggleButton.addEventListener("click", () => {
 
   toggleButton.textContent = next === "dark" ? "☀️" : "🌙";
 });
+
+fetch("https://api.github.com/repos/ArtiomGramatin/SunnyAAGWebsite/commits?per_page=1")
+  .then(response => response.json())
+  .then(data => {
+    const commitDate = new Date(data[0].commit.author.date);
+    const formattedDate = commitDate.toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "numeric"
+    });
+    document.getElementById("last-updated").textContent = `Last updated: ${formattedDate}`;
+  })
+  .catch(() => {
+    document.getElementById("last-updated").textContent = "";
+  });
